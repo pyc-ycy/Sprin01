@@ -18,6 +18,39 @@ public class Agent {
         this.sex=sex;
         this.addr=addr;
     }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setSex(String sex) {
+        this.sex = sex;
+    }
+
+    public void setAge(Integer age) {
+        this.age = age;
+    }
+
+    public void setAddr(String addr) {
+        this.addr = addr;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getSex() {
+        return sex;
+    }
+
+    public Integer getAge() {
+        return age;
+    }
+
+    public String getAddr() {
+        return addr;
+    }
+
     public void printInfo(){
         System.out.println("客户姓名："+name);
         System.out.println("客户年龄："+age);

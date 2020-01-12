@@ -13,4 +13,5 @@
         <constructor-arg value="男"/>
         <constructor-arg value="史兰县"/>
     </bean>
+    <bean autowire="byName" id="printAgentInfo" class="com.myCode.beanSet.PrintAgentInfo"/>
 </beans>

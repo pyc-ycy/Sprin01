@@ -10,6 +10,7 @@ package com.myCode.main;
 
 import com.myCode.beanSet.Student;
 import com.myCode.beanSet.Agent;
+import com.myCode.beanSet.PrintAgentInfo;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.xml.XmlBeanFactory;
 import org.springframework.core.io.ClassPathResource;
@@ -27,5 +28,8 @@ public class Manager {
         System.out.println("==========================");
         Agent agent = (Agent)factory.getBean("agent");
         agent.printInfo();
+        System.out.println("========================");
+        PrintAgentInfo printAgentInfo = (PrintAgentInfo)factory.getBean("printAgentInfo");
+        printAgentInfo.PrintAgent();
     }
 }
