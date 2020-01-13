@@ -11,8 +11,11 @@ package com.myCode.main;
 import com.myCode.beanSet.Student;
 import com.myCode.beanSet.Agent;
 import com.myCode.beanSet.PrintAgentInfo;
+import com.myCode.beanSet.UserInfo;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.xml.XmlBeanFactory;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
 
@@ -31,5 +34,10 @@ public class Manager {
         System.out.println("========================");
         PrintAgentInfo printAgentInfo = (PrintAgentInfo)factory.getBean("printAgentInfo");
         printAgentInfo.PrintAgent();
+        System.out.println("=========================");
+        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        UserInfo ui = (UserInfo)context.getBean("user");
+        ui.printInfo();
+
     }
 }

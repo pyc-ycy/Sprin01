@@ -13,4 +13,18 @@
         <constructor-arg value="男"/>
         <constructor-arg value="史兰县"/>
     </bean>
+    <bean autowire="byName" id="printAgentInfo" class="com.myCode.beanSet.PrintAgentInfo"/>
+    <bean id="user" class="com.myCode.beanSet.UserInfo">
+        <property name="name" value="小强"/>
+        <property name="age" value="26"/>
+        <property name="sex" value="男"/>
+        <property name="date" value="1985-02-08 16:20:50"/>
+    </bean>
+    <bean id="customEditorConfigurer" class="org.springframework.beans.factory.config.CustomEditorConfigurer">
+        <property name="customEditors">
+            <map>
+                <entry key="java.util.Date" value="com.myCode.beanSet.MyDateEditor"/>
+            </map>
+        </property>
+    </bean>
 </beans>
