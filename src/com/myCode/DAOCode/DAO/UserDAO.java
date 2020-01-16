@@ -5,7 +5,10 @@
 // Author:御承扬
 //E-mail:2923616405@qq.com
 
-package com.myCode.DAOCode;
+package com.myCode.DAOCode.DAO;
+
+import com.myCode.DAOCode.impl.UserDAOImpl;
+import com.myCode.DAOCode.bean.User;
 
 import javax.sql.DataSource;
 import java.sql.Connection;

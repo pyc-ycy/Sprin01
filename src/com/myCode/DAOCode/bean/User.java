@@ -5,7 +5,7 @@
 // Author:御承扬
 //E-mail:2923616405@qq.com
 
-package com.myCode.DAOCode;
+package com.myCode.DAOCode.bean;
 
 public class User {
     private Integer id;

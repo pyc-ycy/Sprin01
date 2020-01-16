@@ -6,7 +6,9 @@
 //E-mail:2923616405@qq.com
 
 
-package com.myCode.DAOCode;
+package com.myCode.DAOCode.impl;
+
+import com.myCode.DAOCode.bean.User;
 
 public interface UserDAOImpl {
     public void insertUser(User user);
