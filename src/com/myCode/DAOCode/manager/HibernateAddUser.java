@@ -17,7 +17,7 @@ public class HibernateAddUser {
         BeanFactory factory = new ClassPathXmlApplicationContext("applicationContext.xml");
         HibernateUserDAO userDAO = (HibernateUserDAO)factory.getBean("hibernateUserDAO");
         User user = new User();
-        user.setName("SpringHibernate");
+        user.setName("叶灵");
         user.setAge(20);
         user.setSex("男");
        try{
